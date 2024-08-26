@@ -59,15 +59,22 @@ public class Conversions
             System.out.println(Meters + "Meters is" + Feet + "Feet");
 
         }
-        if(selection == 3)
+        if(selection == 5)
         {
             System.out.println("Enter Ounces: ");
             double Ounces = keyboard.nextDouble();
             keyboard.nextLine();
             double Milliliters = Ounces * 29.574;
             System.out.println(Ounces + "Ounces is" + Milliliters + "Milliliters");
-            
-        
+
+        }
+        if(selection == 5)
+        {
+            System.out.println("Enter Milliliters: ");
+            double Milliliters = keyboard.nextDouble();
+            keyboard.nextline();
+            double Ounces = Milliliters / 29.574;
+            System.out.println(Milliliters + "Milliliters is" + Ounces + "Ounces"); 
             
             
             
