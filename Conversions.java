@@ -17,6 +17,12 @@ public class Conversions
         System.out.println("4. Meters to Feet");
         System.out.println("5. Ounces to Milliliters");
         System.out.println("6. Milliliters to Ounces");
+        System.out.println("7. Miles to Feet");
+        System.out.println("8. Feet to Miles");
+        System.out.println("7. Gallons to Quarts");
+        System.out.println("8. Quarts to Gallons");
+
+        
         //Add 2 more conversions, each both ways, to add choices 7, 8, 9, and 10.
         //You can add even more if you would like.
 
@@ -68,13 +74,49 @@ public class Conversions
             System.out.println(Ounces + "Ounces is" + Milliliters + "Milliliters");
 
         }
-        if(selection == 5)
+        if(selection == 6)
         {
             System.out.println("Enter Milliliters: ");
             double Milliliters = keyboard.nextDouble();
             keyboard.nextline();
             double Ounces = Milliliters / 29.574;
             System.out.println(Milliliters + "Milliliters is" + Ounces + "Ounces"); 
+
+        }
+        if(selection == 7)
+        {
+            System.out.println("Enter Miles: ");
+            double Miles = keyboard.nextDouble();
+            keyboard.nextline();
+            double Feet = Miles / 5280;
+            System.out.println(Miles + "Miles is" + Feet + "Feet"); 
+        }
+        if(selection == 8)
+        {
+            System.out.println("Enter Feet: ");
+            double Feet = keyboard.nextDouble();
+            keyboard.nextline();
+            double Miles = Feet * 5280;
+            System.out.println(Feet + "Feet is" + Miles + "Miles"); 
+        }
+        if(selection == 9)
+        {
+            System.out.println("Enter Gallons: ");
+            double Gallons = keyboard.nextDouble();
+            keyboard.nextline();
+            double Quarts = Gallons / 4;
+            System.out.println(Gallons + "Gallons is" + Quarts + "Quarts"); 
+        }
+        if(selection == 10)
+        {
+            System.out.println("Enter Quarts: ");
+            double Quarts = keyboard.nextDouble();
+            keyboard.nextline();
+            double Gallons = Quarts * 4;
+            System.out.println(Quarts + "Quarts is" + Gallons + "Gallons"); 
+        }
+        
+        
             
             
             
