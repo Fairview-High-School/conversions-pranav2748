@@ -2,8 +2,8 @@ import java.util.Scanner;
 /**
  * This application converts between various units of measurement.
  *
- * @author Tim Gesell
- * @version 8/21/2022
+ * @author Pranav Erukulapati
+ * @version 8/25/2024
  */
 public class Conversions
 {
@@ -33,8 +33,25 @@ public class Conversions
         }
         if (selection == 2)
         {
+            System.out.println("Enter Fahrenheit: ");
+            double Fahrenheit = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Celsius = (Fahrenheit - 32) * 5.0/9.0;
+            System.out.println(Fahrenheit + " degrees Fahrenheit is " + Celsius + " degrees Celsius");
             //add the code to ask the user to enter Fahrenheit and then convert to Celsius
         }
+        if (selection == 3)
+        {
+            System.out.println("Enter Feet: ");
+            double Feet = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Meters = Feet * 0.3048;
+            System.out.println(Feet + "Feet is" + Meters + "Meters");
+
+        }
+            
+            
+            
         //add more if statements here.
     }
 }
