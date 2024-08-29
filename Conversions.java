@@ -4,6 +4,8 @@ import java.util.Scanner;
  *
  * @author Pranav Erukulapati
  * @version 8/25/2024
+ * @author Pranav Erukulapati
+ * @version 8/25/2024
  */
 public class Conversions
 {
@@ -39,6 +41,11 @@ public class Conversions
         }
         if (selection == 2)
         {
+            System.out.println("Enter Fahrenheit: ");
+            double Fahrenheit = keyboard.nextDouble();
+            keyboard.nextLine();
+            double Celsius = (Fahrenheit - 32) * 5.0/9.0;
+            System.out.println(Fahrenheit + " degrees Fahrenheit is " + Celsius + " degrees Celsius");
             System.out.println("Enter Fahrenheit: ");
             double Fahrenheit = keyboard.nextDouble();
             keyboard.nextLine();
